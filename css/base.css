@@ -1,0 +1,26 @@
+/* Base Styles */
+body {
+    background: #fff;
+}
+
+/* Responsive Width Stuff */
+.width_wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+@media (min-width: 768px) {
+    .width_wrapper {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .width_wrapper {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .width_wrapper {
+        width: 1170px;
+    }
+}

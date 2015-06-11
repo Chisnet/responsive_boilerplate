@@ -1,0 +1,32 @@
+/* Header Blobk */
+#page_header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5000;
+    width: 100%;
+    background-color: #999;
+}
+
+/* Logo */
+#page_header h1 {
+    height: 30px;
+    line-height: 30px;
+    padding-top: 20px;
+    margin: 0;
+}
+@media (min-width: 768px) {
+    #page_header h1 {
+        padding-top: 35px;
+    }
+}
+
+/* Header Wrapper */
+#header_inner {
+    height: 70px;
+}
+@media (min-width: 768px) {
+    #header_inner {
+        height: 100px;
+    }
+}
