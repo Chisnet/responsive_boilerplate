@@ -1,0 +1,36 @@
+/* Basics */
+#page_content .column {
+    background-color: #aaa;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* TEMP */
+#page_content .two_column .column1 {
+    height: 600px;
+}
+#page_content .two_column .column2 {
+    height: 400px;
+}
+
+/* 2 Column */
+@media (min-width: 992px) {
+    #page_content .two_column .column1 {
+        float: left;
+        width: 632px;
+    }
+    #page_content .two_column .column2 {
+        float: right;
+        width: 320px;
+    }
+}
+@media (min-width: 1200px) {
+    #page_content .two_column .column1 {
+        float: left;
+        width: 840px;
+    }
+    #page_content .two_column .column2 {
+        float: right;
+        width: 320px;
+    }
+}

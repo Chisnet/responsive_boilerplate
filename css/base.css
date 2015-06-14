@@ -1,26 +1,53 @@
 /* Base Styles */
+*, *::after, *::before {
+    box-sizing: border-box;
+}
 body {
     background: #fff;
+}
+p {
+    margin: 0 0 10px;
 }
 
 /* Responsive Width Stuff */
 .width_wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin: 0 auto;
 }
 @media (min-width: 768px) {
     .width_wrapper {
-        width: 750px;
+        width: 768px;
     }
 }
 @media (min-width: 992px) {
     .width_wrapper {
-        width: 970px;
+        width: 992px;
     }
 }
 @media (min-width: 1200px) {
     .width_wrapper {
-        width: 1170px;
+        width: 1200px;
     }
+}
+
+/* Main Content */
+#page_content {
+    margin-top: 70px;
+}
+@media (min-width: 768px) {
+    #page_content {
+        margin-top: 150px;
+    }
+}
+#content_inner {
+    padding-top: 10px;
+    overflow: hidden;
+}
+.contentBox {
+    padding: 10px;
+    margin-top: 10px;
+}
+.contentBox:first-of-type {
+    margin-top: 0px;
 }

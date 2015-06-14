@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{page:title}</title>
+        <!-- Meta -->
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <!-- Styles -->
+        <link rel="stylesheet" href="/css/normalize.css"/>
+        <link rel="stylesheet" href="/css/base.css"/>
+        <link rel="stylesheet" href="/css/header.css"/>
+        <link rel="stylesheet" href="/css/navigation.css"/>
+        <link rel="stylesheet" href="/css/columns.css"/>
+    </head>
+    <body>
+        <div id="container">
+            <header id="page_header">
+                <div id="header_inner" class="width_wrapper">
+                    <h1 id="logo">
+                        <a href="/" title="{site:name}">{site:name}</a>
+                    </h1>
+                    <a id="skip_nav" href="#primary_nav"><span></span></a>
+                </div>
+                <div id="primary_nav">
+                    <nav id="nav_inner" class="width_wrapper">
+                        <ul class="nav">
+                            <li class="active"><span>Home</span></li>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main id="page_content">
+                <div id="content_inner" class="width_wrapper two_column">
+                    <div class="column column1">
+                        <div class="contentBox">
+                            {content:column1}
+                        </div>
+                        <div class="contentBox">
+                            {content:column2}
+                        </div>
+                        <div class="contentBox">
+                            {content:column3}
+                        </div>
+                    </div>
+                    <div class="column column2">
+                        <div class="contentBox">
+                            {content:column4}
+                        </div>
+                        <div class="contentBox">
+                            {content:column5}
+                        </div>
+                        <div class="contentBox">
+                            {content:column6}
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer id="page_footer">
+                <div id="footer_inner" class="width_wrapper">
+
+                </div>
+            </footer>
+        </div>
+        <!-- Scripts -->
+        <script src="/js/lib/jquery.js"></script>
+        <script src="/js/navigation.js"></script>
+    </body>
+</html>

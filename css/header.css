@@ -6,18 +6,35 @@
     z-index: 5000;
     width: 100%;
     background-color: #999;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    #page_header {
+        text-align: left;
+    }
 }
 
 /* Logo */
 #page_header h1 {
     height: 30px;
     line-height: 30px;
-    padding-top: 20px;
-    margin: 0;
+    margin-top: 20px;
+    display: inline-block;
+    background-image: url('/images/logo.png');
+    background-size: 99px 30px;
+    width: 99px;
+    text-indent: -9999em;
+}
+#page_header h1 a {
+    display: block;
 }
 @media (min-width: 768px) {
     #page_header h1 {
-        padding-top: 35px;
+        margin-top: 25px;
+        background-size: 165px 50px;
+        height: 50px;
+        line-height: 50px;
+        width: 165px;
     }
 }
 
