@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{page:title}</title>
+        <!-- Meta -->
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <!-- Styles -->
+        <link rel="stylesheet" href="/css/normalize.css"/>
+        <link rel="stylesheet" href="/css/base.css"/>
+        <link rel="stylesheet" href="/css/header.css"/>
+        <link rel="stylesheet" href="/css/navigation.css"/>
+        <link rel="stylesheet" href="/css/columns.css"/>
+    </head>
+    <body>
+        <div id="container">
+            <header id="page_header">
+                <div id="header_inner" class="width_wrapper">
+                    <h1 id="logo">
+                        {if:equal(chisnet[page][path],"/")}{site:name}{else:}<a href="/" title="{site:name}">{site:name}</a>{end:}
+                    </h1>
+                    <a id="skip_nav" href="#primary_nav"><span></span></a>
+                </div>
+                <div id="primary_nav">
+                    <nav id="nav_inner" class="width_wrapper">
+                        <ul class="nav">
+                            {foreach:chisnet[navigation],navSection}
+                                {if:equal(navSection[name],"Primary")}
+                                    {foreach:navSection[navigation],navItem}
+                                        <li{if:equal(navItem[path],chisnet[page][path])} class="active"{end:}><a href="{navItem[path]}" title="{navItem[name]}">{navItem[name]}</a></li>
+                                    {end:}
+                                {end:}
+                            {end:}
+                        </ul>
+                    </nav>
+                </div>
+            </header>
